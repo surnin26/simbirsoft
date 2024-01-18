@@ -7,3 +7,6 @@ class MainPage(BasePage):
         field = self.browser.find_element(*locator)
         field.click()
         field.send_keys(text)
+
+    def find(self, locator):
+        return self.browser.find_element(*locator)

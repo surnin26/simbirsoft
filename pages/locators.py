@@ -15,5 +15,13 @@ class MainPageLocators:
     YEAR_ENTER = (By.CSS_SELECTOR, "react-datepicker__year-select")
     YEAR_CHOICE = (By.CSS_SELECTOR, ".react-datepicker__year-select  option[value=\"1998\"]")
     DATE_ENTER = (By.CSS_SELECTOR, "div[class=\"react-datepicker__day react-datepicker__day--022\"]")
+    SUBJECTS = (By.XPATH, "//*[@id=\"subjectsInput\"]")
+    HOBBIES = (By.XPATH, "//*[@id=\"hobbiesWrapper\"]/div[2]/div[1]/label")
+    UPLOAD_FILE = By.XPATH, "//*[@id=\"uploadPicture\"]"
+    CURRENT_ADDRESS = By.ID, "currentAddress"
+    STATE = By.ID, "state"
+    ENTER_STATE = By.XPATH, "//*[@id=\"state\"]/div/div[1]/div[1]"
+    BODY = By.CSS_SELECTOR, "body"
+
 
 

@@ -1,7 +1,9 @@
 import time
 
-from .pages.locators import MainPageLocators
-from .pages.main_page import MainPage
+from selenium.webdriver import Keys
+
+from pages.locators import MainPageLocators
+from pages.main_page import MainPage
 
 link = "https://demoqa.com/automation-practice-form"
 
@@ -27,4 +29,14 @@ def test_fill_form_registration(browser):
     page.click_button(MainPageLocators.MONTH_CHOICE)
     page.click_button(MainPageLocators.YEAR_CHOICE)
     page.click_button(MainPageLocators.DATE_ENTER)
+    page.fill_field(MainPageLocators.SUBJECTS, "Хочу стать SDET")
+    page.click_button(MainPageLocators.HOBBIES)
+    page.find(MainPageLocators.UPLOAD_FILE).send_keys(r"D:\4 Gallery\Desktop\Silicilium\surninAutotests\files\file.png")
+    page.find(MainPageLocators.CURRENT_ADDRESS).send_keys("Russia, Moscow city, Galicina street, 5/5")
+    page.down()
+    # page.click_button(MainPageLocators.STATE)
+    # page.click_button(MainPageLocators.ENTER_STATE)
     time.sleep(5)
+
+
+
