@@ -1,8 +1,6 @@
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 
-from pages.locators import MainPageLocators
-
 
 class BasePage:
 
