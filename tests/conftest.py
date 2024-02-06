@@ -10,9 +10,9 @@ service = Service(executable_path=ChromeDriverManager().install())
 @pytest.fixture(scope='function')
 def browser():
     chrome_options = Options()
-    # chrome_options.add_argument("window-size=1920,1080")
+    chrome_options.add_argument("window-size=1920,1920")
     browser = webdriver.Chrome(options=chrome_options, service=service)
-    browser.maximize_window()
+    # browser.maximize_window()
     browser.implicitly_wait(3)
     yield browser
     browser.quit()

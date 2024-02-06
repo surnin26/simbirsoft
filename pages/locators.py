@@ -19,9 +19,12 @@ class MainPageLocators:
     HOBBIES = (By.XPATH, "//*[@id=\"hobbiesWrapper\"]/div[2]/div[1]/label")
     UPLOAD_FILE = By.XPATH, "//*[@id=\"uploadPicture\"]"
     CURRENT_ADDRESS = By.ID, "currentAddress"
-    STATE = By.ID, "state"
-    ENTER_STATE = By.XPATH, "//*[@id=\"state\"]/div/div[1]/div[1]"
+    STATE = By.XPATH, "//*[@id=\"state\"]/div/div[1]"
+    ENTER_STATE = By.XPATH, "//*[@id=\"react-select-3-option-0\"]"
+    CITY = By.XPATH, "//*[@id=\"city\"]/div/div[1]"
+    ENTER_CITY = By.XPATH, "//*[@id=\"react-select-4-option-1\"]"
     BODY = By.CSS_SELECTOR, "body"
-
+    # SUBMIT = By.CSS_SELECTOR, "button[id=\"submit\"]"
+    SUBMIT = By.XPATH, ""
 
 
